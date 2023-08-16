@@ -1,4 +1,4 @@
-AESDCHAR_VERSION = e51ec640b6639e95466fa798a7f1a743469dcf57
+AESDCHAR_VERSION = 2f31560a26f6695e8e7062500463183df2edc90e
 
 AESDCHAR_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-shotaro12oyama.git
 AESDCHAR_SITE_METHOD = git
