@@ -1,26 +1,42 @@
-TBD: Fill in all sections below, Writing "N/A" if a section is not applicable to your project.
+# ECEA 5307 Linux Embedded System Topics and Projects
 
 # Overview
-TBD: Add your project overview, including goals and motivation.
-Include at least one block diagram showing all hardware components and interactions.
+## Motivation
+I believe there are pet owners who want to know how thier cat walk around during day time.
+My project aim at tracking the cat behavior by using the GPS sensor and record its location periodically.
+
+## Project Goals
++ Build a custom build root image for the Rapsberry pi
++ Write a custom UART driver to communicate the GPS driver
++ Write a user application to record the log of GPS information periodically
+
+## Block Diagram
+
+
+
 
 
 # Target Build System
-TBD: Mention whether you plan to use buildroot or Yocto.
+Target Build System is buildroot. 
 
 # Hardware Platform
-TBD: Mention hardware platform you plan to use.  Include additional detail about how you plan to support with your build platform, including links to relevant documentation, if not in the list of currently [Supported Hardware](https://github.com/cu-ecen-aeld/aesd-assignments/wiki/Supported-Hardware-Platforms).
+I am using Rapsberry pi. Refer to the detais are [here](https://github.com/cu-ecen-aeld/buildroot-assignments-base/wiki/Raspberry-Pi-Hardware-Support). 
 
-TBD: Mention the number and type of boards you would like to borrow from the department for your project or if you plan to source the hardware yourself.
 
 # Open Source Projects Used
-TBD: Mention any open source project content you intend to use with the project, beyond the base platform buildroot/yocto packages already used in assignments.
+N/A
 
 # Previously Discussed Content
-TBD: Mention any content covered in previous assignments, lectures, or book sections you plan to use with the project as a basis. For instance, if you plan to use the aesdsocket or aesdchar componets either partially or completely.
+1. Device Driver development - Lectures, Assignment (7-9), Linux Device Drivers, 3rd Edition, Jonathan Corbet, Alessandro Rubini.
+2. Socket programming - Lectures, Assignment (4-9), Linux System Programming, 2nd Edition, Robert love
+3. Building Linux kernel and image with buildroot - Lectures, Assignment 4,5,7,8
+
 
 # New Content
-TBD: Mention the new content you plan to cover with your assignment, separating between items we've discussed in class already but not included in previous assignments and items we have not yet discussed in class.
+Buildroot build for rapsberry pi
+GPS sensor (MTK3339) and Accelerometer MPU 6050 sensors configuration.
+UART custom driver and device tree configuration.
+Build WebClient with server Thingspeak
 
 # Shared Material
 TBD: Detail any portion of the project leveraged from other coursework or using [components from previous semesters](https://github.com/cu-ecen-5013/buildroot-assignments-base/wiki) by yourself or others.
@@ -34,12 +50,5 @@ ApplicationX code will be hosted in in a repository at [TBD]
 
 We request X additional repositories for application Y and Z.
 
-# Group Overview
-TBD: Fill in this section for group projects, delete it for individual projects
-
-## Team project members:
-
-TBD: list members.  List high level role in the project for each member
-
 # Schedule Page
-TBD: Include link to shared schedule wiki page below.
+Shedule is [here](https://github.com/users/shotaro12oyama/projects/1).
