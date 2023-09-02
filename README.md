@@ -2,18 +2,16 @@
 
 # Overview
 ## Motivation
-I believe there are pet owners who want to know how thier cat walk around during day time.
-My project aim at tracking the cat behavior by using the GPS sensor and record its location periodically.
+I worry about my kids play outside in extreme hot summer.
+My project aim at tracking the weather information in the park periodically, then find if it is safe.
 
 ## Project Goals
 + Build a custom build root image for the Rapsberry pi
-+ Write a custom UART driver to communicate the GPS driver
-+ Write a user application to record the log of GPS information periodically
++ Write a custom I2C driver to communicate the temperature sensor and so on.
++ Write a user application to record the log of sensor information periodically
 
 ## Block Diagram
-
-
-
+![Block Diagram](https://github.com/shotaro12oyama/final-project-assignment-shotaro12oyama/blob/main/Block.jpeg)
 
 
 # Target Build System
@@ -24,7 +22,8 @@ I am using Rapsberry pi. Refer to the detais are [here](https://github.com/cu-ec
 
 
 # Open Source Projects Used
-N/A
+1. [Linux source code tree](https://github.com/torvalds/linux)
+2. [Raspberry Pi](https://www.raspberrypi.com/)
 
 # Previously Discussed Content
 1. Device Driver development - Lectures, Assignment (7-9), Linux Device Drivers, 3rd Edition, Jonathan Corbet, Alessandro Rubini.
@@ -33,22 +32,15 @@ N/A
 
 
 # New Content
-Buildroot build for rapsberry pi
-GPS sensor (MTK3339) and Accelerometer MPU 6050 sensors configuration.
-UART custom driver and device tree configuration.
-Build WebClient with server Thingspeak
++ Buildroot build for Raspberry Pi
++ Temperature sensors configuration
++ I2C custom driver and device tree configuration
 
 # Shared Material
-TBD: Detail any portion of the project leveraged from other coursework or using [components from previous semesters](https://github.com/cu-ecen-5013/buildroot-assignments-base/wiki) by yourself or others.
+N/A
 
 # Source Code Organization
-TBD: Modify the content below:
-
-Buildroot or Yocto Repository will be hosted at [TBD]
-
-ApplicationX code will be hosted in in a repository at [TBD]
-
-We request X additional repositories for application Y and Z.
+Source code of this project is [here](https://github.com/cu-ecen-aeld/final-project-shotaro12oyama)
 
 # Schedule Page
 Shedule is [here](https://github.com/users/shotaro12oyama/projects/1).
