@@ -9,13 +9,15 @@ case "$1" in
 		modprobe hello
 		module_load faulty
 		scull_load
+		pmod_load
 		;;
 	stop)
 		echo "Unloading drivers and modules"
 		aesdchar_unload
 		rmmod hello
-        module_unload faulty
-        scull_unload
+        	module_unload faulty
+        	scull_unload
+		pmod_unload
         ;;
     *)
         echo "Usage: $0 {start|stop}"
