@@ -1,4 +1,4 @@
-I2C_VERSION = a90f1de0cbfac54e8d349a2493503d3ec15b094d
+I2C_VERSION = 1d565809b98f04c1fa083e433804e6421f82cf87
 
 I2C_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-shotaro12oyama.git
 I2C_SITE_METHOD = git
@@ -18,3 +18,4 @@ define I2C_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/i2c/pmod_unload $(BR2_ROOTFS_OVERLAY)/bin/pmod_unload
 endef
 
+$(eval $(generic-package))
