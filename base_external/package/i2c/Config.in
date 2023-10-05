@@ -1,4 +1,0 @@
-config BR2_PACKAGE_I2C
-	bool "i2c"
-	help
-	  Includes the scull and misc-modules.
