@@ -5,11 +5,18 @@ case "$1" in
         echo "Starting i2c kernel modules"
         modprobe i2c-dev
         modprobe i2c-bcm2835
+	modprobe industrialio
+	modprobe industrialio-triggered-buffer
+	/usr/bin/pmod_load
+	echo "pmod 0x40" > /sys/bus/i2c/devices/i2c-1/new_device
         ;;
     stop)
         echo "Stopping i2c kernel modules"
-        rmmod i2c-bcm2835
+        /usr/bin/pmod_unload
+	rmmod i2c-bcm2835
         rmmod i2c-dev
+	rmmod industrialio
+	rmmod industrialio-triggered-buffer
         ;;
     *)
         echo "Usage: $0 {start|stop}"
